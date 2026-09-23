@@ -1,0 +1,23 @@
+
+  [41;1m ParseError [49;22m
+
+[39;1m  syntax error, unexpected token "}"[39;22m
+
+  at [32mtests\Feature\AdminManajemenKampanyeTest.php[39m:[32m103[39m
+     99▕         ->assertSee(route('admin.manajemen-kampanye.hapus', $menungguBerDonasi->id))
+    100▕         ->assertSee('Kampanye ini MASIH AKTIF dan mungkin menerima donasi. Yakin ingin menghapusnya?')
+    101▕         ->assertSee('Kampanye ini sudah SELESAI dengan sukses. Yakin ingin menghapusnya?')
+    102▕         ->assertSee('Yakin ingin menghapus kampanye ini?')
+  ➜ 103▕ });
+    104▕ 
+    105▕ test('admin dapat menghapus kampanye semua status, tersimpan sebagai soft delete, dan komentarnya ikut terhapus permanen', function () {
+    106▕     $admin = User::factory()->create(['role' => 'admin']);
+    107▕
+
+  [33m1   [39m[39;1mvendor\pestphp\pest\overrides\Runner\TestSuiteLoader.php[39;22m:[39;1m98[39;22m
+  [90m    PHPUnit\Runner\TestSuiteLoader::PHPUnit\Runner\{closure}()[39m
+
+  [33m2   [39m[39;1mvendor\phpunit\phpunit\src\TextUI\Configuration\TestSuiteBuilder.php[39;22m:[39;1m119[39;22m
+  [90m    PHPUnit\Runner\TestSuiteLoader::load("D:\laragon\www\BeriPeduli\tests\Feature\AdminManajemenKampanyeTest.php")[39m
+
+
